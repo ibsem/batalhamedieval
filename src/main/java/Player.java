@@ -1,5 +1,6 @@
 public class Player {
 	private String name;
+	private String fightStyleName;
 	private String turnAction = null;
 	private int life;
 	private int attack;
@@ -7,6 +8,28 @@ public class Player {
 	private int luck;
 	private int special;
 	
+	
+	
+	public String getFightStyleName() {
+		return fightStyleName;
+	}
+
+	public void setFightStyleName(String fightStyleName) {
+		this.fightStyleName = fightStyleName;
+	}
+
+	public int getSpecial() {
+		return special;
+	}
+
+	public void setSpecial(int special) {
+		this.special = special;
+	}
+
+	public String getName() {
+		return name;
+	}
+
 	public Player(String n, String ta, int lf, int atk, int def, int lk){
 		setName(n);
 		setTurnAction(ta);
